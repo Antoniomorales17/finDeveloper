@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 import logo from "./../../assets/images/logo.png"
 import userImg from "./../../assets/images/client-avatar.png"
 import { Link, NavLink } from "react-router-dom";
+import { BiMenu } from 'react-icons/bi';
+
 
 const navLinks = [
     {
@@ -24,15 +26,38 @@ const navLinks = [
 ]
 
 const Header = () => {
+
+const headerRef = useRef(null);
+const menuRef = useRef(null);
+
+const handleStickyHeader = () => {
+    window.addEventListener("scroll", () => {
+    if (document.body.scrollTop> 80 || document.documentElement.scrollTop > 80) {
+        headerRef.current.classList.add("sticky__header");
+    } else {
+        headerRef.current.classList.remove("sticky__header");
+    }
+})
+}
+
+useEffect(() => {
+    handleStickyHeader();
+    return () => window.removeEventListener("scroll", handleStickyHeader);
+}, [])
+
+
+const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
+
     return (
-        <header className="header flex items-center">
+        <header className="header flex items-center" ref={headerRef} >
             <div className="container">
                 <div className="flex items-center justify-between">
                     <div>
                         <img src={logo} alt="" />
                     </div>
 
-                    <nav className="navigation">
+                    <nav className="navigation" ref={menuRef} onClick={toggleMenu}>
                         <ul className="menu flex items-center gap-[2.7rem]">
                             {
                                 navLinks.map((link, index) => (
@@ -63,7 +88,7 @@ const Header = () => {
                             </Link>
                         </div>
 
-                        <div>
+                        
                             <Link to="/login">
                                 <button className="bg-yellowColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[500px]">
                                    Login
@@ -72,17 +97,13 @@ const Header = () => {
                                 {/* <button className="text-textColor text-[16px] leading-7 font[500] hover:text-yellowColor">Login</button> */}
                             </Link>
 
-                            <span className="md:hidden">
+                            <span className="md:hidden" onClick={toggleMenu}>
+                                <BiMenu className="w-6 h-6 cursor-pointer" />
 
                             </span>
-                        </div>
-
+                        
                     </nav>
-
-                </div>
-
-
-            
+                </div>           
             </div>
         </header>
     )
