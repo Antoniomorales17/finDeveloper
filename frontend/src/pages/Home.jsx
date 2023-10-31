@@ -1,13 +1,15 @@
 import React from "react";
-import meee from "./../assets/images/meee.png";
+import me from "./../assets/images/me.png";
 import heroimg02 from "./../assets/images/hero-img02.png";
 import heroimg03 from "./../assets/images/hero-img03.png";
 import icon01 from "./../assets/images/icon01.png";
 import icon02 from "./../assets/images/icon02.png";
 import icon03 from "./../assets/images/icon03.png";
+import videoIcon from "./../assets/images/video-icon.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
+import ServiceList from "../components/Services/ServiceList";
 
 const Home = () => {
     return (
@@ -62,7 +64,7 @@ const Home = () => {
                         {/* ===== herocontent ===== */}
                         <div className="flex gap-[30px] justify-end">
                             <div>
-                                <img className="w-full" src={meee} alt="" />
+                                <img className="w-full" src={me} alt="" />
 
                             </div>
 
@@ -81,7 +83,7 @@ const Home = () => {
                 </div>
             </section>
 
-            
+
             <div className="container">
                 <div className="lg:w-[470px] mx-auto">
                     <h2 className="heading text-center">
@@ -95,38 +97,38 @@ const Home = () => {
 
             <section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
-                
-                <div className="py-[30px] px-5">
-                    <div className="flex items-center justify-center">
-                        <img src={icon01} alt="" />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
+
+                    <div className="py-[30px] px-5">
+                        <div className="flex items-center justify-center">
+                            <img src={icon01} alt="" />
+                        </div>
+
+                        <div className="mt-[30px]">
+                            <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
+                                Encuentra un dev
+                            </h2>
+
+                            <p className="text__para text-center leading-7 text-textColor font-[400] mt-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                            </p>
+                            <Link
+                                to="/developers"
+                                className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-yellowColor hover:border-none"
+                            >
+                                <BsArrowRight className="group-hover:text-white w-6 h-5" />
+
+                            </Link>
+
+
+
+                        </div>
+
+
+
                     </div>
 
-                    <div className="mt-[30px]">
-                        <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
-                            Encuentra un dev
-                        </h2>
-
-                        <p className="text__para text-center leading-7 text-textColor font-[400] mt-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
-                        </p>
-                        <Link
-                            to="/developers"
-                            className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-yellowColor hover:border-none"
-                        >
-                            <BsArrowRight className="group-hover:text-white w-6 h-5" />
-
-                        </Link>
-
-
-
-                    </div>
-                    
-
-
-                </div>
-
-                <div className="py-[30px] px-5">
+                    <div className="py-[30px] px-5">
                         <div className="flex items-center justify-center">
                             <img src={icon02} alt="" />
                         </div>
@@ -175,14 +177,84 @@ const Home = () => {
 
                             </Link>
                         </div>
-                        
+
 
                     </div>
-                    
-            </div>
+
+                </div>
             </section>
-            <About/>
-            
+            <About />
+
+            <section>
+                <div className="container">
+                    <div className="xl:w-[470px] mx-auto">
+                        <h2 className="heading text-center">
+                            Nuestros servicios
+                        </h2>
+                        <p className="text__para text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                        </p>
+                    </div>
+
+                    <ServiceList />
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <div className="flex items-center justify-between flex-col lg:flex-row ">
+                        <div className="xl:w-[670]">
+                            <h2 className="heading">
+                                Obtenga una asesoria virtual
+                            </h2>
+                            <ul className="pl-4">
+                                <li className="text__para">
+                                    1.Contrato directo con desarrolladores
+                                </li>
+                                <li className="text__para">
+                                    2.Encuentra recursos con valores y personalidad
+                                </li>
+                                <li className="text__para">
+                                    3.Si no estas conforme con el trabajo, lo reemplazamos sin coste adicional
+                                </li>
+                            </ul>
+
+                            <Link to="/">
+                                <button className="btn">Conocer más</button>
+
+                            </Link>
+                            
+                            
+
+                        </div>
+                        <div className="relative z-10 xl:w-[760px] flex justify-end mt-[50px] lg:mt-0">
+                                <img src={me} className="w-3/4" alt="" />
+
+                                <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4  lg:pb-[26px] rounded-[10px]">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center gap-6 lg:gap-3">
+                                            <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
+                                                Lun, 21
+                                            </p>
+                                            <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
+                                                11:30
+                                            </p>
+
+
+                                        </div>
+                                        <span className="text-[10px] leading-[10px] lg:text-[14px] flex justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3px lg:px-[9px]">
+                                            <img src={videoIcon} className="3/4" alt="" />
+                                        </span>
+                                    </div>
+                                    <div className="w-[65px] lg:w-[95px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
         </>
     );
 };
