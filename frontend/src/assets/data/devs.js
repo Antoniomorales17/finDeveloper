@@ -12,6 +12,7 @@ export const devs = [
     photo: devImg01,
     totalProjects: 8,
     country: "Colombia",
+    lastCompany:"Glovo"
   },
   {
     id: "02",
@@ -22,6 +23,7 @@ export const devs = [
     photo: devImg02,
     totalProjects: 15,
     country: "India",
+    lastCompany:"Amazon"
   },
   {
     id: "03",
@@ -32,5 +34,6 @@ export const devs = [
     photo: devImg03,
     totalProjects: 13,
     country: "USA",
+    lastCompany:"Google"
   },
 ];

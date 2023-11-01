@@ -5,11 +5,15 @@ import heroimg03 from "./../assets/images/hero-img03.png";
 import icon01 from "./../assets/images/icon01.png";
 import icon02 from "./../assets/images/icon02.png";
 import icon03 from "./../assets/images/icon03.png";
+import faqImg  from "./../assets/images/faq-img.png";
+import avatarIcon from "./../assets/images/avatar-icon.png";
 import videoIcon from "./../assets/images/video-icon.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
+import DevList from "../components/Devs/DevList";
+import FaqsList from "../components/Faqs/FaqsList";
 
 const Home = () => {
     return (
@@ -246,12 +250,39 @@ const Home = () => {
                                         </span>
                                     </div>
                                     <div className="w-[65px] lg:w-[95px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
+                                        Asesoria
+
+                                    </div>
+                                    <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
+                                    <img src={avatarIcon}  alt="" />
+                                    <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] text-headingColor font-[700]">
+                                        Pedro Sanchez
+                                    </h4>
 
                                     </div>
 
                                 </div>
                             </div>
                     </div>
+                    <DevList/>
+                </div>
+            </section>
+
+            <section>
+                <div className="container">
+                    <div className="flex justify-between gap-[50px] lg:gap-0 ">
+                        <div className="w1/2 hidden md:block">
+                            <img src={faqImg} alt="">
+
+                            </img>
+                        </div>
+                        <div className="w-fill w1/2">
+                            <h2 className="heading">Preguntas frecuentes</h2>
+                            <FaqsList/>
+                        </div>
+                            
+
+                        </div>
                 </div>
             </section>
 
