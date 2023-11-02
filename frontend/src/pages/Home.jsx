@@ -14,6 +14,8 @@ import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import DevList from "../components/Devs/DevList";
 import FaqsList from "../components/Faqs/FaqsList";
+import Testimonial from "../components/Testimonial/Testimonial";
+
 
 const Home = () => {
     return (
@@ -283,6 +285,9 @@ const Home = () => {
                             
 
                         </div>
+
+                        <Testimonial/>
+                        
                 </div>
             </section>
 
