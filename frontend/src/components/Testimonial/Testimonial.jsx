@@ -14,7 +14,7 @@ const Testimonial = () => {
             </h2>
 
             <p className="text__para mt-4 pb-7">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                El público manda, nosotros seguimos mejorando
             </p>
 
 
@@ -45,7 +45,7 @@ const Testimonial = () => {
                             <img src={devAvatar} alt="" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px]">
-                                    Antonio Morales
+                                    Alfredo López
                                 </h4>
                                 <div className="flex items-center gap-[12px]">
                                     <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -57,8 +57,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-[16px] leading-7 text-textColor font-[400]">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-                            quod, quaerat, quasi, quidem, quibusdam.
+                        "Estoy impresionado por la calidad y profesionalismo de los desarrolladores que encontré en esta plataforma. Han transformado por completo nuestra empresa con su experiencia."
                         </p>
                     </div>
                 </SwiperSlide>
@@ -81,8 +80,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-[16px] leading-7 text-textColor font-[400]">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-                            quod, quaerat, quasi, quidem, quibusdam.
+                        "Después de buscar en varios lugares, encontramos a los desarrolladores perfectos para nuestro proyecto en esta plataforma. No podríamos estar más satisfechos con los resultados."
                         </p>
                     </div>
                 </SwiperSlide>
@@ -93,7 +91,7 @@ const Testimonial = () => {
                             <img src={devAvatar} alt="" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px]">
-                                    Antonio Morales
+                                    Julian Bosh
                                 </h4>
                                 <div className="flex items-center gap-[12px]">
                                     <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -105,8 +103,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-[16px] leading-7 text-textColor font-[400]">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-                            quod, quaerat, quasi, quidem, quibusdam.
+                        "El equipo de desarrollo que encontramos aquí es excepcional. Han entregado proyectos de alta calidad a tiempo y dentro del presupuesto. ¡Recomiendo encarecidamente sus servicios!"
                         </p>
                     </div>
                 </SwiperSlide>
@@ -117,7 +114,7 @@ const Testimonial = () => {
                             <img src={devAvatar} alt="" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px]">
-                                    Antonio Morales
+                                    Juan Diego Martín
                                 </h4>
                                 <div className="flex items-center gap-[12px]">
                                     <HiStar className="text-yellowColor w-[18px] h-5" />

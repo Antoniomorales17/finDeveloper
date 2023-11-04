@@ -59,7 +59,7 @@ export const devs = [
   },
   {
     id: "05",
-    name: "Dev. Diego Ramirez",
+    name: "Dev. María Ramirez",
     specialty: "Java",
     avgRating: 4.6,
     totalRating: 225,
@@ -81,7 +81,7 @@ export const devs = [
   },
   {
     id: "07",
-    name: "Dev. Mohammed Ali",
+    name: "Dev. Sarah Ali",
     specialty: "Angular",
     avgRating: 4.5,
     totalRating: 150,
@@ -92,7 +92,7 @@ export const devs = [
   },
   {
     id: "08",
-    name: "Dev. Elena Petrov",
+    name: "Dev. Rick Petrov",
     specialty: "PHP",
     avgRating: 4.8,
     totalRating: 285,

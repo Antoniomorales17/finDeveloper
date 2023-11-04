@@ -1,7 +1,7 @@
 import React from "react";
-import me from "./../assets/images/me.png";
-import heroimg02 from "./../assets/images/hero-img02.png";
-import heroimg03 from "./../assets/images/hero-img03.png";
+import me from "./../assets/images/yop.png";
+import heroimg02 from "./../assets/images/dev.jpeg";
+import heroimg03 from "./../assets/images/dev1.jpeg";
 import icon01 from "./../assets/images/icon01.png";
 import icon02 from "./../assets/images/icon02.png";
 import icon03 from "./../assets/images/icon03.png";
@@ -36,7 +36,7 @@ const Home = () => {
                         </h1>
 
                         <p className="text__para">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                            Ten una conversacion con nuestro equipo
                         </p>
 
                         <button className="btn">
@@ -68,20 +68,19 @@ const Home = () => {
                             <p className="text__para"> Clientes satisfechos</p>
                         </div>
                         {/* ===== herocontent ===== */}
-                        <div className="flex gap-[30px] justify-end">
-                            <div>
-                                <img className="w-full" src={me} alt="" />
+                        <div className="flex gap-30 justify-end">
+  <div>
+    <img className="w-64 h-64 object-cover rounded-full" src={me} alt="" />
+  </div>
+</div>
 
-                            </div>
+<div className="mt-30">
+  <div className="grid grid-cols-2 gap-4">
+    <img className="w-full h-64 object-cover rounded-lg" src={heroimg02} alt="" />
+    <img className="w-full h-64 object-cover rounded-lg" src={heroimg03} alt="" />
+  </div>
+</div>
 
-                        </div>
-
-
-                        <div className="mt-[30px]">
-                            <img className="w-full mb-[30px]" src={heroimg02} alt="" />
-                            <img className="w-full" src={heroimg03} alt="" />
-
-                        </div>
 
 
 
@@ -96,7 +95,7 @@ const Home = () => {
                         Maximiza tus beneficios
                     </h2>
                     <p className="text__para text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                        Potencia tu empresa o proyecto hasta donde nunca habías imaginado
                     </p>
                 </div>
             </div>
@@ -116,7 +115,7 @@ const Home = () => {
                             </h2>
 
                             <p className="text__para text-center leading-7 text-textColor font-[400] mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                                Encuentra al desarrollador que se ajuste a tus necesidades
                             </p>
                             <Link
                                 to="/developers"
@@ -145,7 +144,7 @@ const Home = () => {
                             </h2>
 
                             <p className="text__para text-center leading-7 text-textColor font-[400] mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                                Selecciona el pais que te guste y contacta con tu programador
                             </p>
                             <Link
                                 to="/developers"
@@ -173,7 +172,7 @@ const Home = () => {
                             </h2>
 
                             <p className="text__para text-center leading-7 text-textColor font-[400] mt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                                Mandale un mensaje con tus preferencias, tendras una respuesta en menos de 24h
                             </p>
                             <Link
                                 to="/developers"
