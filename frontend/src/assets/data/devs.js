@@ -1,6 +1,6 @@
-import devImg01 from "../images/dev-img01.png";
-import devImg02 from "../images/dev-img02.png";
-import devImg03 from "../images/dev-img03.png";
+import devImg01 from "../images/dev-20.webp";
+import devImg02 from "../images/dev-21.webp";
+import devImg03 from "../images/dev-22.webp";
 import devImg04 from "../images/dev-img04.webp";
 import devImg05 from "../images/dev-img05.jpeg";
 import devImg06 from "../images/dev-img06.webp";
@@ -15,7 +15,7 @@ import devImg13 from "../images/dev-img13.webp";
 export const devs = [
   {
     id: "01",
-    name: "Dev. Jesus González",
+    name: "Dev. Farid Uddin",
     specialty: "React JS",
     avgRating: 4.8,
     totalRating: 272,
@@ -37,7 +37,7 @@ export const devs = [
   },
   {
     id: "03",
-    name: "Dev. Farid Uddin",
+    name: "Dev. Jesus González ",
     specialty: "React JS",
     avgRating: 4.8,
     totalRating: 272,
@@ -58,15 +58,15 @@ export const devs = [
     lastCompany: "Microsoft"
   },
   {
-    id: "05",
-    name: "Dev. María Ramirez",
-    specialty: "Java",
-    avgRating: 4.6,
-    totalRating: 225,
-    photo: devImg05,
-    totalProjects: 12,
-    country: "Spain",
-    lastCompany: "IBM"
+    id: "08",
+    name: "Dev. Rick Petrov",
+    specialty: "PHP",
+    avgRating: 4.8,
+    totalRating: 285,
+    photo: devImg08,
+    totalProjects: 9,
+    country: "Russia",
+    lastCompany: "Yandex"
   },
   {
     id: "06",
@@ -80,6 +80,18 @@ export const devs = [
     lastCompany: "Shopify"
   },
   {
+    id: "05",
+    name: "Dev. María Ramirez",
+    specialty: "Java",
+    avgRating: 4.6,
+    totalRating: 225,
+    photo: devImg05,
+    totalProjects: 12,
+    country: "Spain",
+    lastCompany: "IBM"
+  },
+  
+  {
     id: "07",
     name: "Dev. Sarah Ali",
     specialty: "Angular",
@@ -88,29 +100,7 @@ export const devs = [
     photo: devImg07,
     totalProjects: 18,
     country: "Pakistan",
-    lastCompany: "Facebook"
-  },
-  {
-    id: "08",
-    name: "Dev. Rick Petrov",
-    specialty: "PHP",
-    avgRating: 4.8,
-    totalRating: 285,
-    photo: devImg08,
-    totalProjects: 9,
-    country: "Russia",
-    lastCompany: "Yandex"
-  },
-  {
-    id: "09",
-    name: "Dev. Carlos Fernandez",
-    specialty: "C#",
-    avgRating: 4.6,
-    totalRating: 210,
-    photo: devImg09,
-    totalProjects: 14,
-    country: "Mexico",
-    lastCompany: "Oracle"
+    lastCompany: "Facebook",   
   },
   {
     id: "10",
@@ -123,6 +113,19 @@ export const devs = [
     country: "Brazil",
     lastCompany: "Netflix"
   },
+  
+  {
+    id: "09",
+    name: "Dev. Carlos Fernandez",
+    specialty: "C#",
+    avgRating: 4.6,
+    totalRating: 210,
+    photo: devImg09,
+    totalProjects: 14,
+    country: "Mexico",
+    lastCompany: "Oracle"
+  },
+  
   {
     id: "11",
     name: "Dev. Andrei Ivanov",

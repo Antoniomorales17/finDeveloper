@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
-import logo from "./../../assets/images/logo.png"
+import logo from "./../../assets/images/Logooo.png"
 import userImg from "./../../assets/images/client-avatar.png"
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from 'react-icons/bi';
@@ -54,7 +54,9 @@ const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
             <div className="container">
                 <div className="flex items-center justify-between">
                     <div>
-                        <img src={logo} alt="" />
+                        <a href="/">
+                    <img src={logo} alt="" className="w-40 h-auto" />
+                    </a>
                     </div>
 
                     <nav className="navigation" ref={menuRef} onClick={toggleMenu}>

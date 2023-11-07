@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "./../../assets/images/logo.png";
+import Logo from "./../../assets/images/Logooo.png";
 import { RiLinkedinFill } from "react-icons/ri";
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai";
 
@@ -81,7 +81,9 @@ const Footer = () => {
   return (
     <div className="container">
      <div className="flex flex-col md:flex-row justify-between gap-[30px] items-center">
-      <img src={Logo} alt="" className="w-40 h-auto md:w-auto" />
+      <a href="/">
+     <img src={Logo} alt="" className="w-40 h-auto" />
+     </a>
         <p className="text-[16px] leading-7 font-[400] text-textColor">
           Copyright {new Date().getFullYear()} desarrollado por AntonioMorales
         </p>

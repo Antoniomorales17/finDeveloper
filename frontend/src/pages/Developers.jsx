@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { devs } from "./../assets/data/devs.js";
-import { BsStarFill, BsStarHalf, BsStar,  } from "react-icons/bs";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 
 Modal.setAppElement("#root"); // Reemplaza "#root" con el ID de tu elemento raíz en el HTML
 
@@ -15,10 +14,17 @@ const Developers = () => {
   const [selectedRating, setSelectedRating] = useState(0);
   const [selectedCountry, setSelectedCountry] = useState("All");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCompany, setSelectedCompany] = useState("All");
+
 
   const handleSpecialtyChange = (e) => {
     setSelectedSpecialty(e.target.value);
   };
+
+  const handleCompanyChange = (e) => {
+    setSelectedCompany(e.target.value);
+  };
+
 
   const handleRatingChange = (e) => {
     setSelectedRating(parseFloat(e.target.value));
@@ -85,7 +91,7 @@ const Developers = () => {
             className="w-full border border-primaryColor rounded-md p-2"
           />
         </div>
-  
+
         <div className="mb-4">
           <label htmlFor="email" className="text-sm md:text-base text-headingColor">
             Correo Electrónico:
@@ -97,7 +103,7 @@ const Developers = () => {
             className="w-full border border-primaryColor rounded-md p-2"
           />
         </div>
-  
+
         <div className="mb-4">
           <label htmlFor="mensaje" className="text-sm md:text-base text-headingColor">
             Mensaje:
@@ -109,7 +115,7 @@ const Developers = () => {
             className="w-full border border-primaryColor rounded-md p-2"
           ></textarea>
         </div>
-  
+
         <button
           type="submit"
           className="bg-primaryColor text-white rounded-md px-4 py-2 hover:bg-purpleColor"
@@ -117,7 +123,7 @@ const Developers = () => {
           Enviar
         </button>
       </form>
-  
+
       <div className="mt-6 text-irisBlueColor">
         <a
           href="https://www.linkedin.com/in/antoniomoralesgimenez/"
@@ -138,7 +144,7 @@ const Developers = () => {
           GitHub
         </a>
       </div>
-  
+
       <button
         onClick={closeModal}
         className="mt-4 bg-yellowColor text-white rounded-md px-4 py-2 hover:bg-primaryColor"
@@ -147,8 +153,6 @@ const Developers = () => {
       </button>
     </div>
   );
-  
-  
 
   return (
     <div className="p-4 lg:p-8">
@@ -159,21 +163,89 @@ const Developers = () => {
         Contamos con diferentes perfiles, todos con gran reputación dentro de la comunidad. Tomate tu tiempo y elije a tu Dev preferido.
       </div>
       <div className="flex justify-center mb-4">
-        {/* Tu código para los selectores de filtro */}
+        <select
+          value={selectedSpecialty}
+          onChange={handleSpecialtyChange}
+          className="mr-4 p-2 border rounded-md"
+        >
+          <option value="All">Todas las especialidades</option>
+          <option value="React JS">React JS</option>
+          <option value="NodeJS">NodeJS</option>
+          <option value="Python">Python</option>
+          <option value="Ruby on Rails">Ruby on Rails</option>
+          <option value="Angular">Angular</option>
+          <option value="Java">Java</option>
+          <option value="PHP">PHP</option>
+          <option value="Vue.js">Vue.js</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="C#">C#</option>
+        </select>
+
+        <select
+          value={selectedRating}
+          onChange={handleRatingChange}
+          className="mr-4 p-2 border rounded-md"
+        >
+          <option value={0}>Todas las calificaciones</option>
+          <option value={1}>1 estrella</option>
+          <option value={2}>2 estrellas</option>
+          <option value={3}>3 estrellas</option>
+          <option value={4}>4 estrellas</option>
+          <option value={5}>5 estrellas</option>
+        </select>
+
+        <select
+          value={selectedCountry}
+          onChange={handleCountryChange}
+          className="mr-4 p-2 border rounded-md"
+        >
+          <option value="All">Todos los países</option>
+          <option value="USA">Estados Unidos</option>
+          <option value="India">India</option>
+          <option value="United Kingdom">Reino Unido</option>
+          <option value="Canadá">Canadá</option>
+          <option value="Alemania">Alemania</option>
+          <option value="Australia">Australia</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Francia">Francia</option>
+          <option value="Países Bajos (Holanda)">Países Bajos (Holanda)</option>
+          <option value="Spain">España</option>
+          <option value="Russia">Russia</option>
+        </select>
+
+        <select
+          value={selectedCompany}
+          onChange={handleCompanyChange}
+          className="mr-4 p-2 border rounded-md"
+        >
+          <option value="All">Todas las empresas</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Microsoft">Microsoft</option>
+          <option value="IBM">IBM</option>
+          <option value="Shopify">Shopify</option>
+          <option value="Yandex">Yandex</option>
+          <option value="Oracle">Oracle</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Apple">Apple</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Apple">Apple</option>
+        </select>
+
       </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {devs
-          .filter((dev) => selectedSpecialty === "All" || dev.specialty === selectedSpecialty)
-          .filter((dev) => selectedRating === 0 || dev.avgRating >= selectedRating)
-          .filter((dev) => selectedCountry === "All" || dev.country === selectedCountry)
-          .map((dev) => (
+      {devs
+  .filter((dev) => selectedSpecialty === "All" || dev.specialty === selectedSpecialty)
+  .filter((dev) => selectedRating === 0 || dev.avgRating >= selectedRating)
+  .filter((dev) => selectedCountry === "All" || dev.country === selectedCountry)
+  .filter((dev) => selectedCompany === "All" || dev.lastCompany === selectedCompany) // Agregar filtro por empresa
+  .map((dev) => (
             <li key={dev.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img src={dev.photo} alt={dev.name} className="w-full h-48 object-cover" />
               <h2 className="text-lg lg:text-xl font-semibold p-4">{dev.name}</h2>
               <p className="text-gray-600 p-4">
                 <span
                   className={`bg-[#CCF0F3] py-1 px-2 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-7 font-semibold rounded text-${dev.specialty === "React JS" ? "#61DAFB" : dev.specialty === "NodeJS" ? "#68A063" : "auto"
-                  }`}
+                    }`}
                 >
                   {dev.specialty}
                 </span>
@@ -182,7 +254,7 @@ const Developers = () => {
               <p className="text-gray-600 p-2">Total Rating: {dev.totalRating}</p>
               <p className="text-gray-600 p-2">Proyectos Totales: {dev.totalProjects}</p>
               <p className="text-gray-600 p-2">Pais: {dev.country}</p>
-              <p className="text-gray-600 p-2">Last Company: {dev.lastCompany}</p>
+              <p className="text-gray-600 p-2">Última empresa: {dev.lastCompany}</p>
               <div className="flex items-center justify-center p-4">
                 <button
                   className="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700"

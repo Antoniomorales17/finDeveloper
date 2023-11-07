@@ -5,7 +5,7 @@ import heroimg03 from "./../assets/images/dev1.jpeg";
 import icon01 from "./../assets/images/icon01.png";
 import icon02 from "./../assets/images/icon02.png";
 import icon03 from "./../assets/images/icon03.png";
-import faqImg  from "./../assets/images/faq-img.png";
+import faqImg from "./../assets/images/faq-img.png";
 import avatarIcon from "./../assets/images/avatar-icon.png";
 import videoIcon from "./../assets/images/video-icon.png";
 import { Link } from "react-router-dom";
@@ -31,21 +31,23 @@ const Home = () => {
 
                     <div className="lg:w-[570px]">
                         <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[600] md:leading-[70px]">
-                            Encuentra un <span className="text-white p-1 bg-yellowColor rounded-full ">desarrollador</span> en
+                            Encuentra un <span className="text-white p-1 bg-yellowColor rounded-full ">desarrollador</span> en 
                             <span className="text-white p-1 bg-purpleColor rounded-full">minutos</span>
                         </h1>
 
                         <p className="text__para">
-                            Ten una conversacion con nuestro equipo
+                            En finDeveloper, te conectamos con talentosos desarrolladores de todo el mundo, listos para llevar a cabo tus ideas y hacer crecer tus proyectos. Simplifica tu búsqueda y acelera tu desarrollo con nosotros.
                         </p>
+                        <a href="/developers">
 
                         <button className="btn">
                             Solicita a un reclutador
                         </button>
+                        </a>
                     </div>
 
-                    <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
-                        <div>
+                    <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center justify-center gap-5 lg:gap-[30px]">
+                        <div className="text-center lg:text-left">
                             <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                                 10+
                             </h2>
@@ -53,37 +55,33 @@ const Home = () => {
                             <p className="text__para">Años de experiencia</p>
                         </div>
 
-                        <div>
+                        <div className="text-center lg:text-left">
                             <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                                10000+
+                                10,000+
                             </h2>
                             <span className="w-[100px] h-2 bg-purpleColor rounded-full block mt-14"></span>
-                            <p className="text__para">Desarrolladores</p>
+                            <p className="text__para">Desarrolladores y Técnicos</p>
                         </div>
-                        <div>
+                        <div className="text-center lg:text-left">
                             <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                                 100%
                             </h2>
                             <span className="w-[100px] h-2 bg-irisBlueColor rounded-full block mt-14"></span>
-                            <p className="text__para"> Clientes satisfechos</p>
+                            <p className="text__para">Clientes satisfechos</p>
                         </div>
                         {/* ===== herocontent ===== */}
                         <div className="flex gap-30 justify-end">
-  <div>
+                            {/* <div>
     <img className="w-64 h-64 object-cover rounded-full" src={me} alt="" />
-  </div>
-</div>
+  </div> */}
+                        </div>
 
-<div className="mt-30">
-  <div className="grid grid-cols-2 gap-4">
-    <img className="w-full h-64 object-cover rounded-lg" src={heroimg02} alt="" />
-    <img className="w-full h-64 object-cover rounded-lg" src={heroimg03} alt="" />
-  </div>
-</div>
-
-
-
-
+                        <div className="mt-30">
+                            <div className="grid grid-cols-2 gap-4">
+                                <img className="w-full h-64 object-cover rounded-lg" src={heroimg02} alt="" />
+                                <img className="w-full h-64 object-cover rounded-lg" src={heroimg03} alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -197,7 +195,7 @@ const Home = () => {
                             Nuestros servicios
                         </h2>
                         <p className="text__para text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+                            Disponemos de las últimas tendencias tecnológicas que dominan el mercado
                         </p>
                     </div>
 
@@ -223,49 +221,50 @@ const Home = () => {
                                 </li>
                             </ul>
 
-                            <Link to="/">
+                            <a href="/developers">
                                 <button className="btn">Conocer más</button>
+                                </a>
 
-                            </Link>
                             
-                            
+
+
 
                         </div>
                         <div className="relative z-10 xl:w-[760px] flex justify-end mt-[50px] lg:mt-0">
-                                <img src={me} className="w-3/4" alt="" />
+                            <img src={me} className="w-3/4" alt="" />
 
-                                <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4  lg:pb-[26px] rounded-[10px]">
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center gap-6 lg:gap-3">
-                                            <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
-                                                Lun, 21
-                                            </p>
-                                            <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
-                                                11:30
-                                            </p>
+                            <div className="w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-5 z-20 p-2 pb-3 lg:pt-4  lg:pb-[26px] rounded-[10px]">
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center gap-6 lg:gap-3">
+                                        <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
+                                            Lun, 21
+                                        </p>
+                                        <p className="text-[10px] lg:text-[14px] leading-[10px] lg:leading-5 text-headingColor font-semibold">
+                                            11:30
+                                        </p>
 
-
-                                        </div>
-                                        <span className="text-[10px] leading-[10px] lg:text-[14px] flex justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3px lg:px-[9px]">
-                                            <img src={videoIcon} className="3/4" alt="" />
-                                        </span>
-                                    </div>
-                                    <div className="w-[65px] lg:w-[95px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
-                                        Asesoria
 
                                     </div>
-                                    <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
-                                    <img src={avatarIcon}  alt="" />
+                                    <span className="text-[10px] leading-[10px] lg:text-[14px] flex justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3px lg:px-[9px]">
+                                        <img src={videoIcon} className="3/4" alt="" />
+                                    </span>
+                                </div>
+                                <div className="w-[65px] lg:w-[95px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full">
+                                    Asesoria
+
+                                </div>
+                                <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
+                                    <img src={avatarIcon} alt="" />
                                     <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] text-headingColor font-[700]">
                                         Pedro Sanchez
                                     </h4>
 
-                                    </div>
-
                                 </div>
+
                             </div>
+                        </div>
                     </div>
-                    <DevList/>
+                    <DevList />
                 </div>
             </section>
 
@@ -279,14 +278,14 @@ const Home = () => {
                         </div>
                         <div className="w-fill w1/2">
                             <h2 className="heading">Preguntas frecuentes</h2>
-                            <FaqsList/>
-                        </div>
-                            
-
+                            <FaqsList />
                         </div>
 
-                        <Testimonial/>
-                        
+
+                    </div>
+
+                    <Testimonial />
+
                 </div>
             </section>
 
