@@ -3,8 +3,8 @@ import React from "react";
 const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-primaryBgColor">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
-        <h2 className="text-2xl font-bold text-irisBlueColor mb-4">Iniciar Sesión</h2>
+      <div className="bg-white p-4 rounded-lg shadow-md w-full sm:w-96">
+        <h2 className=" text-2xl sm:text-3xl font-bold text-irisBlueColor mb-4">Iniciar Sesión</h2>
         <form>
           <div className="mb-4">
             <label htmlFor="email" className="text-sm text-irisBlueColor">
@@ -32,7 +32,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="bg-primaryColor text-white rounded-md px-4 py-2 hover:bg-purpleColor w-full"
+            className="bg-yellowColor text-white rounded-md px-4 py-2"
           >
             Iniciar Sesión
           </button>

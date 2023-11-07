@@ -47,28 +47,35 @@ const Home = () => {
                     </div>
 
                     <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center justify-center gap-5 lg:gap-[30px]">
-                        <div className="text-center lg:text-left">
-                            <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                                10+
-                            </h2>
-                            <span className="w-[100px] h-2 bg-yellowColor rounded-full block mt-14"></span>
-                            <p className="text__para">Años de experiencia</p>
-                        </div>
+  <div className="text-center lg:text-left">
+    <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+      10+
+    </h2>
+    <div className="flex items-center">
+      <span className="w-[100%] h-2 bg-yellowColor rounded-full block"></span>
+    </div>
+    <p className="text__para mt-2">Años de experiencia</p>
+  </div>
 
-                        <div className="text-center lg:text-left">
-                            <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                                10,000+
-                            </h2>
-                            <span className="w-[100px] h-2 bg-purpleColor rounded-full block mt-14"></span>
-                            <p className="text__para">Desarrolladores y Técnicos</p>
-                        </div>
-                        <div className="text-center lg:text-left">
-                            <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                                100%
-                            </h2>
-                            <span className="w-[100px] h-2 bg-irisBlueColor rounded-full block mt-14"></span>
-                            <p className="text__para">Clientes satisfechos</p>
-                        </div>
+  <div className="text-center lg:text-left">
+  <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+    1.000+
+  </h2>
+  <div className="flex items-center">
+    <span className="w-[100%] h-2 bg-purpleColor rounded-full block"></span>
+  </div>
+  <p className="text__para mt-2">Desarrolladores y Técnicos</p>
+</div>
+<div className="text-center lg:text-left">
+  <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+    100%
+  </h2>
+  <div className="flex items-center">
+    <span className="w-[100%] h-2 bg-irisBlueColor rounded-full block"></span>
+  </div>
+  <p className="text__para mt-2">Clientes satisfechos</p>
+</div>
+
                         {/* ===== herocontent ===== */}
                         <div className="flex gap-30 justify-end">
                             {/* <div>

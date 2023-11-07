@@ -170,7 +170,7 @@ const DevelopersDetails = () => {
     
           <div className="flex items-center justify-center p-4">
             <button
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-blue-700"
+              className="bg-yellowColor text-white px-4 py-2 rounded-lg flex items-center"
               onClick={openModal} // Abre el modal al hacer clic
             >
               <FiMail className="mr-2" />
