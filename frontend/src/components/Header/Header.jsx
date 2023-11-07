@@ -8,7 +8,7 @@ import { BiMenu } from 'react-icons/bi';
 
 const navLinks = [
     {
-        name:"Inicio",
+        name:"Inicioooo",
         path:"/home"
     },
     {
