@@ -14,11 +14,13 @@ finDeveloper es una plataforma web diseñada para facilitar la búsqueda y el co
 ## Capturas de pantalla
 
 ![findeveloper](https://i.imgur.com/zgWUtjd.png)
+![findeveloper1](https://i.imgur.com/Hm0KOs9.png)
 
 ## Instalación
 
-1. Clona el repositorio:
+cd frontend
+npm install
 
-```bash
-git clone https://github.com/TuUsuario/finDeveloper.git
-cd finDeveloper
+# Configurar Variables de Entorno
+# Asegúrate de configurar las variables de entorno según las necesidades de tu proyecto.
+# Consulta el archivo .env.example para obtener un ejemplo.
