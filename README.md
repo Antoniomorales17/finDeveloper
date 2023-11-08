@@ -13,7 +13,7 @@ finDeveloper es una plataforma web diseñada para facilitar la búsqueda y el co
 
 ## Capturas de pantalla
 
-![findeveloper](https://i.imgur.com/jcvVD2Y.png)
+![findeveloper](https://i.imgur.com/zgWUtjd.png)
 
 ## Instalación
 
